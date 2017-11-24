@@ -6,6 +6,30 @@ using UnityEngine.UI;
 public class TestunityAndroid : MonoBehaviour
 {
 
+  
+    public Text text;
+    public Button btn;
+    private AndroidJavaObject jo = null;
+
+    void Start()
+    {
+        //固定方法
+        AndroidJavaClass jc = new AndroidJavaClass("com.unity3d.player.UnityPlayer");
+
+        jo = jc.GetStatic<AndroidJavaObject>("currenActivity");
+
+      
+        
+    }
+
+    public void Click()
+    {
+        text.text = "";
+        int res = jo.Call<int>("add", 56, 100);
+
+        text.text = "56+100=" + res.ToString();
+
+    }
     /*
 
     public GUILayer label; //显示的lableUI
@@ -64,5 +88,6 @@ public class TestunityAndroid : MonoBehaviour
     }
 
      */
+   
 
 }

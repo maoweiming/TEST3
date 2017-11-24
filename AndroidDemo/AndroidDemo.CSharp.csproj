@@ -93,10 +93,10 @@
     <Compile Include="Assets\Scripts\CameraScript\CameraController.cs" />
     <Compile Include="Assets\Scripts\CameraScript\Interface_tiaozhuan.cs" />
     <Compile Include="Assets\Scripts\CameraScript\Tags.cs" />
-    <Compile Include="Assets\Scripts\CameraScript\Test.cs" />
     <Compile Include="Assets\Scripts\Camera_luxiang\Camera_takephoto.cs" />
     <Compile Include="Assets\Scripts\Main_WearHF.cs" />
     <Compile Include="Assets\Scripts\ShiBie\QRcode.cs" />
+    <Compile Include="Assets\Scripts\Test.cs" />
     <Compile Include="Assets\Scripts\UI\Contents\Controller.cs" />
     <Compile Include="Assets\Scripts\UI\Contents\InfiniteScroll.cs" />
     <Compile Include="Assets\Scripts\UI\Database_btn.cs" />
@@ -116,6 +116,7 @@
     <Compile Include="Assets\Scripts\www\wwwItem.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Assets\Plugins\Android\AndroidManifest.xml" />
     <None Include="Assets\Plugins\zxing.unity.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2013\UnityVS.CSharp.targets" />
